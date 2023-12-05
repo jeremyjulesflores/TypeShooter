@@ -1,21 +1,5 @@
-Canvas Boilerplate is the go-to solution for quickly creating modern canvas pieces using ES6 and webpack.
+## Type Shooter
 
-## Getting Started
+Typing game
 
-1.  Clone the repo:
-
-        git clone https://github.com/christopher4lis/canvas-boilerplate.git
-
-2.  Install dependencies:
-
-        yarn
-
-    or
-
-        npm install
-
-3.  Run webpack:
-
-        npm start
-
-Your canvas piece should open up automatically at http://localhost:3000 and you should see 'HTML CANVAS BOILERPLATE' on hover.
+![image](https://github.com/jeremyjulesflores/TypeShooter/assets/111720888/98b1e9b5-2aa3-42f6-a06a-faa1ad4c9739)
