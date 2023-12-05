@@ -65,24 +65,51 @@
         border: none; /* Remove the border */
         outline: none; /* Remove the outline on focus */
       }
-  
+
+      #menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 24px;
+      color: white;
+    }
+
+    #startButton {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #444749;
+      
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    #startButton:hover {
+      background-color: #555; /* Change to the desired hover background color */
+    }
     </style>
   </head>
   <body>
-    <div id="canvasContainer">
+    <div id="menu">
+      <h1>Type Shooter</h1>
+      <button id="startButton">Start Game</button>
+    </div>
+    <div id="canvasContainer" style="display: none;">
       <canvas></canvas>
     </div>
-    <div id="scoreboard">
+    <div id="scoreboard" style="display: none;">
       <p id="score">0</p> 
     </div>
-    <div id="maxInfo">
+    <div id="maxInfo" style="display: none;">
       <p id="maxSpeedLength">Max Length: 0, Max Speed: 0</p> <!-- Adjust the content accordingly -->
     </div>
-    <div id="textField">
+    <div id="textField" style="display: none;">
       <input type="text" autofocus maxlength="10">
     </div>
 
-    <!-- Your JavaScript code goes here to update the score and maxInfo dynamically -->
-    
+ 
   </body>
 </html>
