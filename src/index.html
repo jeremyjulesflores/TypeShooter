@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Type Shooter</title>
+    <style>
+
+      @font-face {
+        font-family: 'Pixelify Sans';
+        src: url('../assets/Pixelify_Sans/PixelifySans-Regular.ttf') format('truetype');
+      }
+      body {
+        margin: 0;
+        background-color: rgb(30, 30, 30);
+        overflow: hidden; /* Prevents scrolling */
+        font-family: 'Pixelify Sans', sans-serif; /* Optional: Set the font family */
+      }
+      #canvasContainer {
+        position: relative;
+        width: 95%;
+        height: 85vh; /* Set the height of the canvas container to 80% of the viewport height */
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+        font-family: 'Pixelify Sans', sans-serif;
+        border-bottom: 2px solid white; /* Add a white border below the canvas */
+      }
+      #textField {
+        position: absolute;
+        bottom: 0;
+        left: 25%; /* Center horizontally */
+        width: 50%;
+        padding: 20px;
+        font-family: 'Pixelify Sans', sans-serif;
+        color: white;
+        background-color: rgb(30, 30, 30); /* Optional: Set a background color for the text field */
+        text-align: center; /* Center the content horizontally */
+      }
+      #scoreboard {
+        position: absolute;
+        top: 20px;
+        left: 25%; /* Center horizontally */
+        width: 50%;
+        padding: 10px;
+        font-size: xxx-large;
+        color: white;
+        background-color: transparent;
+        text-align: center; /* Center the content horizontally */
+      }
+      #maxInfo {
+        position: absolute;
+        top: 20px;
+        right: 10px; /* Adjust the position accordingly */
+        color: white;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(30, 30, 30);
+        color: white;
+        font-size: xx-large;
+        text-align: center;
+        border: none; /* Remove the border */
+        outline: none; /* Remove the outline on focus */
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div id="canvasContainer">
+      <canvas></canvas>
+    </div>
+    <div id="scoreboard">
+      <p id="score">0</p> 
+    </div>
+    <div id="maxInfo">
+      <p id="maxSpeedLength">Max Length: 0, Max Speed: 0</p> <!-- Adjust the content accordingly -->
+    </div>
+    <div id="textField">
+      <input type="text" autofocus maxlength="10">
+    </div>
+
+    <!-- Your JavaScript code goes here to update the score and maxInfo dynamically -->
+    
+  </body>
+</html>
