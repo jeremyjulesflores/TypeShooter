@@ -98,47 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game */ "./src/js/game.js");
 
 document.addEventListener('DOMContentLoaded', function () {
-  var canvas = document.querySelector('canvas');
-  var c = canvas.getContext('2d');
-  c.font = '"Pixelify Sans", Sans';
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  var animationFrame;
-  var wordCategories = {
-    2: ['at', 'on', 'it', 'go', 'no', 'up', 'us', 'do', 'so', 'if'],
-    3: ['dog', 'cat', 'sun', 'big', 'red', 'run', 'hot', 'fox', 'man', 'bat'],
-    4: ['blue', 'moon', 'tree', 'fire', 'door', 'wind', 'jump', 'rock', 'rain', 'snow'],
-    5: ['apple', 'dance', 'happy', 'beach', 'ocean', 'music', 'green', 'smile', 'pizza', 'lucky'],
-    6: ['banana', 'summer', 'purple', 'guitar', 'travel', 'castle', 'wonder', 'friend', 'coffee', 'yellow'],
-    7: ['freedom', 'awesome', 'champion', 'mystery', 'diamond', 'journey', 'victory', 'monster', 'blessed', 'fantasy'],
-    8: ['tomorrow', 'colorful', 'whisper', 'laughter', 'building', 'triangle', 'daughter', 'friendly', 'squirrel', 'birthday'],
-    9: ['happiness', 'beautiful', 'adventure', 'challenge', 'wonderful', 'celebrate', 'together', 'important', 'community', 'sometimes'],
-    10: ['imagination', 'creativity', 'butterflies', 'watermelon', 'friendship', 'experience', 'perfection', 'generation', 'throughout', 'contribute']
-  };
   document.getElementById('startButton').addEventListener('click', _game__WEBPACK_IMPORTED_MODULE_0__["startGame"]);
   Object(_game__WEBPACK_IMPORTED_MODULE_0__["startGame"])();
-  function gameOver() {
-    // Reset game variables and return to the menu
-    document.getElementById('menu').style.display = 'block';
-    document.getElementById('canvasContainer').style.display = 'none';
-    document.getElementById('scoreboard').style.display = 'none';
-    document.getElementById('maxInfo').style.display = 'none';
-    document.getElementById('textField').style.display = 'none';
-
-    // Reset game state
-    score = 0;
-    maxWordLength = 2;
-    maxSpeed = 0.5;
-    wordCount = 3;
-    waveCount = 0;
-    words = [];
-
-    // Stop the animation loop
-    cancelAnimationFrame(animationFrame);
-
-    // Return to the menu
-    document.getElementById('menu').style.display = 'block';
-  }
 });
 
 /***/ }),
